@@ -1,0 +1,59 @@
+# Organizador de Capturas de Pantalla para Nintendo Switch
+
+Este proyecto es un script en Python diseñado para organizar y reestructurar capturas de pantalla tomadas en la Nintendo Switch. El script procesa imágenes desde una carpeta de origen, renombra los archivos en el formato utilizado por la consola (AAAA-MM-DD_hhmmss_s.jpg) y los organiza en una estructura de carpetas anidada basada en el año, mes y día. Esto es ideal para transferir capturas a una nueva tarjeta SD manteniendo el formato compatible con la consola.
+
+## Características / Features
+- 🖼️ **Renombrado automático de imágenes**: Cambia el nombre de los archivos al formato estándar de Nintendo Switch.  
+- 🗂️ **Organización por estructura de carpetas**: Crea una jerarquía de carpetas basada en Año/Mes/Día.  
+- 📂 **Soporte de formatos**: Compatible con archivos `.jpg` y `.png`.  
+- 🔒 **Conservación de metadatos**: Mantiene los metadatos originales durante el proceso de copia.
+
+---
+
+## Getting Started / Comenzando
+
+### Prerrequisitos / Prerequisites
+- Python 3.8 o superior.  
+- Biblioteca `shutil` (incluida por defecto en Python).  
+
+### Instalación / Installation
+1. Clona este repositorio:  
+   ```bash
+   git clone https://github.com/tuusuario/organizador-nintendo-switch.git
+
+### Asegúrate de tener Python instalado:
+2. python --version
+
+### Configura las carpetas de origen y destino en el script.
+
+- source_folder: Carpeta donde están las imágenes originales.
+- target_folder: Carpeta donde se generará la estructura organizada.
+
+### Uso / Usage
+1. Ejecuta el script:
+- python organizador_switch.py
+
+2. Las imágenes serán copiadas y organizadas en la carpeta destino bajo la estructura:
+- Nintendo/
+    └── Album/
+        ├── 2024/
+        │   ├── 05/
+        │   └── 06/
+        │       ├── 01/
+        │       └── 02/
+        └── 2025/
+
+### Ejemplo de Código / Code Example  
+- source_folder = "C:/ruta/de/imagenes/originales"
+- target_folder = "C:/ruta/de/imagenes/organizadas"
+process_images_with_nested_structure(source_folder, target_folder)
+
+
+### Contribuir / Contributing
+¡Se aceptan contribuciones! Si tienes alguna idea o mejora, no dudes en abrir un pull request o crear un issue.
+
+#### Licencia / License
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+### Contacto / Contact
+Autor: Viru154 
